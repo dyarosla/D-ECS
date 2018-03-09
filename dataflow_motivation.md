@@ -1,4 +1,4 @@
-The Motivation behind Dataflow
+The Motivation for Dataflow
 =
 
 Let's talk about Dataflow programming.
