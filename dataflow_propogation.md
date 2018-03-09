@@ -7,7 +7,7 @@ You could imagine that it would be wasteful to always propogate a change. For ex
 a = 0
 b = complex(a)
 
-for(i in 0...100){
+for(i in 0...100) {
    a = random(100)
 }
 
@@ -43,8 +43,8 @@ a = 0
 b = complex(a)
 c = a + b
 
-for(i in 0...100){
-	log(c)
+for(i in 0...100) {
+   log(c)
 }
 ~~~
 

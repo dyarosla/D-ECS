@@ -6,9 +6,9 @@ Let's talk about Dataflow programming.
 In most languages you'd have assignment operators like this:
 
 ~~~
-a = 5;
-b = a + 2;
-trace(b); // 7
+a = 5
+b = a + 2
+log(b) // 7
 ~~~
 
 `b` is set to the value of `a + 2` at a single point in time- when the assignment line is executed. If we then follow that up with
