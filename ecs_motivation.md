@@ -36,7 +36,7 @@ In ECS, we create an Entity and then assign it Components. Entities are often re
 ~~~
 var e = uniqueID();
 addComponent(e, new Location(x:5, y:10));
-addComponent(e, new Texture(name:"test.png"));
+addComponent(e, new Texture(fileName:"test.png"));
 ~~~
 
 Like Components, Entities also do not have any methods.
@@ -53,7 +53,7 @@ When we add a Component to an Entity, it will be registered with all Systems tha
 
 For example, we could have a `TextureSystem` that operates on `Texture` Components. 
 
-If we add a `Texture` Component to an Entity, that `Texture` Component will be registered with the `TextureSystem`, at which point the `TextureSystem` could load the image defined by the `Texture`'s name property.
+If we add a `Texture` Component to an Entity, that `Texture` Component will be registered with the `TextureSystem`, at which point the `TextureSystem` could load the image defined by the `Texture`'s `fileName` property.
 
 Note that a System operating on a Component is equivalent to a System operating on the Entity who owns that Component. Because Entities simply store bundles of Components, they themselves are never directly operated on.
 
