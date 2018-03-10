@@ -65,7 +65,7 @@ For example, we could have a `RenderSystem` that operated on the Entities that o
 
 By separating the definition of our Entities from their methods, we end up defining Entities purely by their set of Components. Thus, Entities are modular and easily open for extensibility and we can add new functionality to an Entity simply by adding new Components to it.
 
-How those Entities operate, or interact with one another, is defined solely in the Systems that operate on the Entities' Components. Systems' sole responsibility is to define how the Components they operate on work. Because they operate on separate sets of Components, their design lends them to highly decouple functionality from other systems and allows your entire program to be testable.
+How those Entities operate, or interact with one another, is defined solely in the Systems that operate on the Entities' Components. Systems' sole responsibility is to define how the Components they operate on work. Because they operate on separate sets of Components, it lends them to becoming highly decoupled from other Systems, and more easily testable on their own.
 
 The power of ECS is that it provides a framework to create modular, testable, decoupled, and ultimately, versatile programs.
 
