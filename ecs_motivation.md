@@ -1,4 +1,5 @@
-#The Motivation for ECS
+The Motivation for ECS
+==
 
 Entity Component Systems, or ECS for short, is a programming paradigm that eschews a lot of typically object-oriented principles (things like subclasses and data encapsulation) for a design that is more "data-driven".
 
