@@ -1,5 +1,5 @@
 # D-ECS
-# Dataflow - Entity Component Systems
+## Dataflow - Entity Component Systems
 
 Thoughts on combining Dataflow programming and Entity Component Systems
 
