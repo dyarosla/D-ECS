@@ -39,19 +39,18 @@ The call to `log(c)` would *unwrap* `c`.
 This brings us to one more thought. What if we had
 
 ~~~
-a = 0
-b = complex(a)
-c = a + b
+a = complex(10)
+b = a + 1
 
 for(i in 0...100) {
-   log(c)
+   log(b)
 }
 ~~~
 
-We don't want to *fully unwrap* `c` 100 times. That would require us to overcompute the value of `b` (again, assuming `complex(i)` is deterministic).
+We don't want to *fully unwrap* `b` 100 times. That would require us to recompute the value of `a` 100 times (again, assuming `complex(i)` is deterministic).
 
 Our ideal assignment operator would both only *unwrap* variables when values are requested *and* cache computations that we've already done.
 
-In the above example, `log(c)` would compute the value of `b` once during the 0th iteration of the for loop, as well as cache the result of `a + b`. Each subsequent iteration of the for loop would simply log the same cached value.
+In the above example, `log(b)` would compute the value of `a` once during the 0th iteration of the loop, as well as cache the result of `a + 1`. Each subsequent iteration of the loop would simply log the same cached value for `b`.
 
-How would we implement such a behavior? I will be covering that in the next article.
+We can conclude that for efficient dataflow propogation, we want assignment that both only computes values when they are needed, as well as caches results of computations between retrievals.
