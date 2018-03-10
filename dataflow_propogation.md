@@ -54,3 +54,5 @@ Our ideal assignment operator would both only *unwrap* variables when values are
 In the above example, `log(b)` would compute the value of `a` once during the 0th iteration of the loop, as well as cache the result of `a + 1`. Each subsequent iteration of the loop would simply log the same cached value for `b`.
 
 We can conclude that for efficient dataflow propogation, we want assignment that both only computes values when they are needed, as well as caches results of computations between retrievals.
+
+[All Topics](https://github.com/dyarosla/D-ECS)
