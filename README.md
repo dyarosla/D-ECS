@@ -1,7 +1,7 @@
-# D-ECS
-## Dataflow - Entity Component Systems
+# DECS
+### Dataflow Entity Component Systems
 
-Thoughts on combining Dataflow programming and Entity Component Systems
+Some thoughts on implementing Entity Component Systems with Dataflow programming.
 
 1. [The Motivation for Dataflow](https://github.com/dyarosla/dataflow/blob/master/dataflow_motivation.md)
 
