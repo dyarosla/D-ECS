@@ -1,4 +1,4 @@
-# DECS
+# D-ECS
 ### Dataflow Entity Component Systems
 
 Some thoughts on implementing Entity Component Systems with Dataflow programming.
