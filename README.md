@@ -17,4 +17,8 @@ Some thoughts on implementing Entity Component Systems with Dataflow programming
 
 ### D-ECS
 
-1. Combining Dataflow with ECS - coming soon.
+1. [Dataflow Components](https://github.com/dyarosla/dataflow/blob/master/decs_dataflowcomponents.md)
+
+2. [Copy Systems](https://github.com/dyarosla/dataflow/blob/master/decs_copysystems.md)
+
+3. More to come!
