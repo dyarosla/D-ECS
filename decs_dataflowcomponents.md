@@ -1,4 +1,4 @@
-Components as Dataflow bundles
+Dataflow Components
 ==
 
 In the ECS articles, we defined Components to be bundles of data, or "dumb data objects".

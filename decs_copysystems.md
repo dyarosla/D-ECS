@@ -1,4 +1,5 @@
-#Copy Systems
+Copy Systems
+==
 
 It is often the case that we want some Systems to simply copy data between Components they operate on. For example, a `PhysicsRect` Component may require the `x` and `y` properties of a `Location` component.
 
