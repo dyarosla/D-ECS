@@ -51,15 +51,13 @@ A System is a set of methods that operates on a Component or a set of Components
 
 When we add a Component to an Entity, it will be registered with all Systems that operate on it. 
 
-For example, we could have a `TextureSystem` that operates on `Texture` Components. 
-
-If we add a `Texture` Component to an Entity, that `Texture` Component will be registered with the `TextureSystem`, at which point the `TextureSystem` could load the image defined by the `Texture`'s `fileName` property.
+For example, we can have a `TextureSystem` that operates on `Texture` Components. If we add a `Texture` Component to an Entity, that `Texture` Component will be registered with the `TextureSystem`, at which point the `TextureSystem` could load the image defined by the `Texture`'s `fileName` property.
 
 Note that a System operating on a Component is equivalent to a System operating on the Entity who owns that Component. Because Entities simply store bundles of Components, they themselves are never directly operated on.
 
 The most interesting part of ECS are Systems that operate on sets of Components that belong to the same Entity (sometimes called Nodes).
 
-For example, we could have a `RenderSystem` that operated on the Entities that owned the set of Components `<Location, Texture>`. Every frame, the `RenderSystem` could render the image defined by the `Texture` Component at the screen location defined by the `Location` Component.
+For example, we can have a `RenderSystem` that operates on the Entities that own the set of Components `<Location, Texture>`. Every frame, the `RenderSystem` can render the image defined by the `Texture` Component at the screen location defined by the `Location` Component.
 
 ### Why is this powerful?
 

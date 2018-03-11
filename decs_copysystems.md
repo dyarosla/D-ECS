@@ -17,7 +17,7 @@ PhysicsRect {
 }
 ~~~
 
-A System that copies between these two Components would operate on `(Location, PhysicsRect)` nodes.
+A System that copies between these two Components would operate on `<Location, PhysicsRect>` Component sets, sometimes referred to as Nodes. This particular Node could look like this:
 
 ~~~
 LocationPhysicsRectNode {

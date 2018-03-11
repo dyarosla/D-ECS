@@ -5,9 +5,9 @@ From the previous article, we've defined an Entity to be an instance of a bundle
 
 However, there are certain times when we come to find patterns of Components we want Entities to have, that define specific kinds of Entities. 
 
-As a hypothetical example, we might find that "UI Elements" are Entities which require the Components `Layout`, `TouchTracker`, and `Renderable` to have all the base functionality we expect from a "UI Element". A "UI Element" in this case can be considered a blueprint for certain types of Entities.
+As a hypothetical example, we might find that "UI Elements" are Entities which require the Components `<Layout, TouchTracker, Renderable>` to have all the base functionality we expect from a "UI Element". A "UI Element" in this case can be considered a *blueprint* for certain types of Entities.
 
-This "blueprint" has taken on the term Assemblage in ECS literature. You can think of the relationship between Assemblages to Entities as akin to the relationship between Classes to instances of those classes.
+This *blueprint* has taken on the term Assemblage in ECS literature. You can think of the relationship between Assemblages to Entities as akin to the relationship between Classes to instances of those classes.
 
 An Assemblage simply defines a bundle of Component classes.
 
