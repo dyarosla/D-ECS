@@ -55,6 +55,4 @@ In the above example, `log(b)` would compute the value of `a` once during the 0t
 
 We can conclude that for efficient dataflow propogation, we want assignment that both only computes values when they are needed, as well as caches results of computations between retrievals.
 
-Next up: [The Motivation for ECS](https://github.com/dyarosla/dataflow/blob/master/ecs_motivation.md)
-
 [All Topics](https://github.com/dyarosla/D-ECS)

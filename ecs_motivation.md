@@ -34,9 +34,9 @@ An Entity is a bundle of Components. More precisely, it is an instance of a bund
 In ECS, we create an Entity and then assign it Components. Entities are often represented by an integer `id` that maps to a set of components.
 
 ~~~
-var e = uniqueID();
-addComponent(e, new Location(x:5, y:10));
-addComponent(e, new Texture(fileName:"test.png"));
+var e = ecs.createEntity(); // returns a unique integer id
+ecs.addComponent(e, new Location(x:5, y:10));
+ecs.addComponent(e, new Texture(fileName:"test.png"));
 ~~~
 
 Like Components, Entities also do not have any methods.
@@ -68,5 +68,7 @@ By separating the definition of our Entities from their methods, we end up defin
 How those Entities operate, or interact with one another, is defined solely in the Systems that operate on the Entities' Components. Systems' sole responsibility is to define how the Components they operate on work. Because they operate on separate sets of Components, it lends them to becoming highly decoupled from other Systems, and more easily testable on their own.
 
 The power of ECS is that it provides a framework to create modular, testable, decoupled, and ultimately, versatile programs.
+
+Next up: [Assembalges in ECS](https://github.com/dyarosla/dataflow/blob/master/ecs_assemblages.md)
 
 [All Topics](https://github.com/dyarosla/D-ECS)
