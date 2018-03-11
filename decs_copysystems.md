@@ -47,7 +47,7 @@ CopyLocationToPhysicsSystem {
 Moreover, the order for when this System is added to our program is important relative to the order of when other systems are added. Specifically, this System must update after the `LocationSystem` updates the `x`,`y` values, and before the `PhysicsSystem` operates on the copied values.
 
 ### D-ECS for Copy Systems
-In D-ECS, our System that registers a each node could simply assign the relation between the respective values of each Component.
+In D-ECS, our System that registers each node could simply assign the relation between the respective values of each Component.
 
 ~~~
 CopyLocationToPhysicsSystem {
