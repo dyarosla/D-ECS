@@ -61,7 +61,7 @@ scaleY : 1   <- [10.Transform.scaleX]
 ~~~
 
 
-We can see that `x` and `y` are derived from the Position Component of the same Entity, the `scaleX` value is determined by a computation dependant on the `5` Entity's `Screen` Component's `resolution` value, and lastly that the `Transform.scaleY` value is derived from its own `scaleX` value. 
+We can see that `x` and `y` are dependant on the `Position` Component of the same Entity, the `scaleX` value is dependant on the `5` Entity's `Screen` Component's `resolution` variable, and lastly the `Transform.scaleY` value is dependent on the same `Transform` Component's `scaleX` variable.
 
 We can also take this a step further to also trace the function that computes the resulting value of each variable.
 
