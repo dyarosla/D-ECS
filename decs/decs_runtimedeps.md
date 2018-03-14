@@ -63,7 +63,18 @@ scaleY : 1   <- [10.Transform.scaleX]
 
 We can see that `x` and `y` are dependant on the `Position` Component of the same Entity, the `scaleX` value is dependant on the `5` Entity's `Screen` Component's `resolution` variable, and lastly the `Transform.scaleY` value is dependent on the same `Transform` Component's `scaleX` variable.
 
-We can also take this a step further to also trace the function that computes the resulting value of each variable.
+We can also take this a step further to also log the function is assigned to each variable.
+
+~~~
+> ecs.getValues(entity:10, component:Transform)
+
+10.Transform
+---------
+x : 100      = function(){ return position.x }
+y : 100      = function(){ return position.y }
+scaleX : 1   = function(){ return screen.resolution == HD ? 1 : 2 }
+scaleY : 1   = function(){ return scaleX }
+~~~
 
 This makes runtime debugging both of our original ECS problems much simpler.
 
@@ -111,8 +122,8 @@ y : 0        <- []
 
 10.Position
 ---------
-x : 0        <- null
-y : 0        <- null
+x : 0        = null
+y : 0        = null
 ~~~
 
 We see that the `Position` values aren't themselves being set as we expect them. We would go ahead and fix that up in a System that acts on `Position` Components.
