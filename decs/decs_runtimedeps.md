@@ -61,11 +61,11 @@ scaleY : 1   <- [10.Transform.scaleX]
 ~~~
 
 
-We can see that `x` and `y` are derived from the Position Component of the same Entity, the `scaleX` value is determined by some dependency on another Entity's `Screen` Component's `resolution` value, and lastly that the `Transform.scaleY` value is derived from its own `scaleX` value. 
+We can see that `x` and `y` are derived from the Position Component of the same Entity, the `scaleX` value is determined by a computation dependant on the `5` Entity's `Screen` Component's `resolution` value, and lastly that the `Transform.scaleY` value is derived from its own `scaleX` value. 
 
-We can also take this a step further to also trace the function that determines the resulting value of each value.
+We can also take this a step further to also trace the function that computes the resulting value of each variable.
 
-This makes runtime debugging incredibly simpler, and moreover, solves both of our original ECS problems.
+This makes runtime debugging both of our original ECS problems much simpler.
 
 If a Component seems to "do nothing", say for instance, it's transformation on screen seems to not update, our query could return:
 
