@@ -63,7 +63,7 @@ scaleY : 1   <- [10.Transform.scaleX]
 
 We can see that `x` and `y` are dependant on the `Position` Component of the same Entity, the `scaleX` value is dependant on the `5` Entity's `Screen` Component's `resolution` variable, and lastly the `Transform.scaleY` value is dependent on the same `Transform` Component's `scaleX` variable.
 
-We can also take this a step further to also log the function that each variable is assigned.
+We can also take this a step further and also log the function assigned to each variable.
 
 ~~~
 > ecs.getValues(entity:10, component:Transform)
