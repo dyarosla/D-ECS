@@ -9,6 +9,6 @@ D-ECS is a paradigm that combines Dataflow and Entity Component Systems by redef
 
 Let's take a look at how adding Dataflow to ECS can make it work even better:
 
-Next up: [Copy Systems](https://github.com/dyarosla/dataflow/blob/master/decs_copysystems.md)
+Next up: [Copy Systems](https://github.com/dyarosla/dataflow/blob/master/decs/decs_copysystems.md)
 
 [All Topics](https://github.com/dyarosla/D-ECS)

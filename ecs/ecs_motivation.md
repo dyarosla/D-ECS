@@ -67,6 +67,6 @@ How those Entities operate, or interact with one another, is defined solely in t
 
 The power of ECS is that it provides a framework to create modular, testable, decoupled, and ultimately, versatile programs.
 
-Next up: [Assembalges in ECS](https://github.com/dyarosla/dataflow/blob/master/ecs/ecs_assemblages.md)
+Next up: [Assemblages in ECS](https://github.com/dyarosla/dataflow/blob/master/ecs/ecs_assemblages.md)
 
 [All Topics](https://github.com/dyarosla/D-ECS)
