@@ -55,6 +55,6 @@ a = function() { return fibonacci(i + j) }
 b = function() { return a + 2 }
 ~~~
 
-Next up: [Propogation in Dataflow](https://github.com/dyarosla/dataflow/blob/master/dataflow_propogation.md)
+Next up: [Propogation in Dataflow](https://github.com/dyarosla/dataflow/blob/master/dataflow/dataflow_propogation.md)
 
 [All Topics](https://github.com/dyarosla/D-ECS)

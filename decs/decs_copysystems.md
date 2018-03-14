@@ -67,4 +67,6 @@ Due to how Dataflow propogation works, our program would only copy over the `x` 
 
 And because we don't have an `update()` method anymore, it does not matter when we register this System with respect to the other Systems. We no longer have to worry about whether we add it before or after we add the `LocationSystem` and `PhysicsRectSystem` to our program.
 
+Next up: [Runtime Dependencies](https://github.com/dyarosla/dataflow/blob/master/decs/decs_runtimedeps.md)
+
 [All Topics](https://github.com/dyarosla/D-ECS)
