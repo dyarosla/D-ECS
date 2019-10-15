@@ -52,10 +52,8 @@ In D-ECS, our System that registers each node could simply assign the relation b
 ~~~
 CopyLocationToPhysicsSystem {
     function register(node){
-        node.physicsRect.x = 
-            function() { return node.location.x }
-        node.physicsRect.y = 
-            function() { return node.location.y }
+        node.physicsRect.x = () -> { node.location.x }
+        node.physicsRect.y = () -> { node.location.y }
     }
 }
 ~~~
