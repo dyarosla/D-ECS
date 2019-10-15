@@ -49,10 +49,10 @@ The value of `b` is now dependent on `a`, which itself is dependent on `i` and `
 That's the idea behind Dataflow programming. Variables are not assigned values so much as they are assigned functions, that may or may not depend on other variables.
 
 ~~~
-i = function() { return 2 }
-j = function() { return 4 }
-a = function() { return fibonacci(i + j) }
-b = function() { return a + 2 }
+i = () -> { 2 }
+j = () -> { 4 }
+a = () -> { fibonacci(i + j) }
+b = () -> { a + 2 }
 ~~~
 
 Next up: [Propogation in Dataflow](https://github.com/dyarosla/dataflow/blob/master/dataflow/dataflow_propogation.md)
