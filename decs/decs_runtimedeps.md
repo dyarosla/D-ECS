@@ -70,10 +70,10 @@ We can take this a step further and log the function assigned to each variable.
 
 10.Transform
 ---------
-x : 100      = function(){ return position.x }
-y : 100      = function(){ return position.y }
-scaleX : 1   = function(){ return screen.resolution == HD ? 1 : 2 }
-scaleY : 1   = function(){ return scaleX }
+x : 100      = () -> { position.x }
+y : 100      = () -> { position.y }
+scaleX : 1   = () -> { screen.resolution == HD ? 1 : 2 }
+scaleY : 1   = () -> { scaleX }
 ~~~
 
 This makes runtime debugging both of our original ECS problems much simpler.
